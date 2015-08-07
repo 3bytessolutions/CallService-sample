@@ -43,6 +43,7 @@ CallService.getDefaultInstance().initiateCall(remoteId, this, new CallService.Ca
     public void onSuccess() {
 	    // there you go, request is sent
 	}
+});
 ```
 
 #### Respond to a call request
@@ -57,6 +58,7 @@ CallService.getDefaultInstance().callResponse(remoteId, true, this, new CallServ
     public void onSuccess() {
 	    // all set, will start streaming
 	}
+});
 ```
 
 #### Register first
@@ -71,6 +73,7 @@ CallService.getDefaultInstance().register(userId, GOOGLE_CLOUD_PROJECT_ID, MainA
     public void onSuccess() {
 	    // done, you can make/receive call now
 	}
+});
 ```
 
 #### Get Library
