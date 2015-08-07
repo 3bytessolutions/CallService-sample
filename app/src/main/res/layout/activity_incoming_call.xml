@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#CCCCCC"
+    tools:context="${applicationId}.IncomingCallActivity" >
+
+    <ImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/default_avatar_large" />
+
+    <TextView
+        android:id="@+id/textLabel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/imageAvatar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Video call from ABCD XYZ"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#53A93F"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textBackground"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textLabel"
+        android:layout_centerHorizontal="true"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/textHiddenCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textBackground"
+        android:layout_alignBottom="@+id/textBackground"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageBtnIgnore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLabel"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/textHiddenCenter"
+        android:src="@drawable/ic_ignore"
+        android:onClick="ignoreCall" />
+    
+    <ImageView
+        android:id="@+id/imageBtnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLabel"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/textHiddenCenter"
+        android:src="@drawable/ic_accept"
+        android:onClick="acceptCall" />
+
+</RelativeLayout>

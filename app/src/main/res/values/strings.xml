@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CallServiceSample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="legals">©2015 3bytes Inc <a href="https://callservice-backend.appspot.com/">license</a></string>
+</resources>
