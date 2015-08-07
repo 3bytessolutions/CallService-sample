@@ -3,7 +3,8 @@
 ![](sample-screenshot.png)
 
 #### Download
- * [AAR](https://github.com/3bytessolutions/CallService-sample#get-library)
+ * Sample - [Install from Play Store](https://play.google.com/store/apps/details?id=com.threebytes.callservicesample)
+ * Library - [AAR](https://github.com/3bytessolutions/CallService-sample#get-library)
 
 #### Features
  * Easy to use library for Android
@@ -14,8 +15,6 @@
  * No charges
 
 #### Sample Application
-
-[Install from Play Store](https://play.google.com/store/apps/details?id=com.threebytes.callservicesample)
 
 This is a very basic sample application, for making and receiving a video call. Below are different classes of the app and it's usage:
 
