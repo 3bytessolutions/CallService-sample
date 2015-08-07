@@ -16,6 +16,7 @@
 #### Sample Application
 
 [Install from Play Store](https://play.google.com/store/apps/details?id=com.threebytes.callservicesample)
+
 This is a very basic sample application, for making and receiving a video call. Below are different classes of the app and it's usage:
 
  * [Main Activity](https://github.com/3bytessolutions/CallService-sample/blob/master/app/src/main/java/com/threebytes/callservicesample/MainActivity.java)
