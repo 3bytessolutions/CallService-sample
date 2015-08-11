@@ -8,7 +8,7 @@
 
 #### Features
  * Easy to use library for Android
- * No need to own or configure TURN/STUN server
+ * No need to own or configure any server
  * Single API call to Initiate, Receive or Decline a call
  * Works for Video and Audio calls
  * Configurable Video/Audio quality
