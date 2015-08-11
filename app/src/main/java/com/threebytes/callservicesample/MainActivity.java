@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -30,6 +32,26 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnRegister = (Button) findViewById(R.id.register);
 
+        /*
+         * allow only alphanumeric user Ids
+         */
+        InputFilter filter = new InputFilter() {
+            public CharSequence filter(CharSequence source, int start, int end,
+                                       Spanned dest, int dstart, int dend) {
+                for (int i = start; i < end; i++) {
+                    if (!Character.isLetterOrDigit(source.charAt(i))) {
+                        return "";
+                    }
+                }
+                return null;
+            }
+        };
+        ((EditText)findViewById(R.id.userId)).setFilters(new InputFilter[]{filter});
+        ((EditText)findViewById(R.id.remoteId)).setFilters(new InputFilter[]{filter});
+
+        /*
+         * check for registration
+         */
         String userId = CallService.getDefaultInstance().getUserId(getApplicationContext());
         if(userId != null) {
             ((EditText)findViewById(R.id.userId)).setText(userId);
