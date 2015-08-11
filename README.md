@@ -83,7 +83,7 @@ CallService.getDefaultInstance().register(userId, GOOGLE_CLOUD_PROJECT_ID, MainA
 
 #### Get the library access
 
-You'll need to send an email to [mail@3bytes.co.in](mailto:mail@3bytes.co.in) with following details:
+You'll need to send an email to [whosderforhelp@gmail.com](mailto:whosderforhelp@gmail.com) with following details:
 
 * Your Application Package Name
 * SHA1 fingerprints of debug and release keys
