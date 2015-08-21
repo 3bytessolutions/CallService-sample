@@ -87,6 +87,6 @@ You'll need to send an email to [whosderforhelp@gmail.com](mailto:whosderforhelp
 
 * Your Application Package Name
 * SHA1 fingerprints of debug and release keys
-* Google Cloud Project ID (It can be a blank project)
+* Google Cloud Project Number (Do not use this project for any other purpose)
 * API key for server application, for public access (from the same Google Cloud Project)
 * Your contact email address
