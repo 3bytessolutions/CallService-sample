@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String userId = ((EditText) findViewById(R.id.userId)).getText().toString();
 
-                CallService.getDefaultInstance().register(userId, GOOGLE_CLOUD_PROJECT_ID, MainActivity.this, new CallService.Callback() {
+                CallService.getDefaultInstance().register(userId, userId, GOOGLE_CLOUD_PROJECT_ID, MainActivity.this, new CallService.Callback() {
                     @Override
                     public void onError(Exception error) {
                         error.printStackTrace();
